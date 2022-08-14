@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 
 // Styles
 import './reset.css';
+import './index.css';
+import './assets/fonts/poppins/poppins.css';
 
 // Components
 import Nav from './components/Nav/Nav';

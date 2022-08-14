@@ -1,3 +1,6 @@
-#root {
-  max-width: 100%;
+.App {
+  background-color: aqua;
+  font-family: 'Poppins';
+  margin: 0 auto;
+  max-width: 1512px;
 }
