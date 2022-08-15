@@ -1,5 +1,5 @@
 .nav {
-  background-color: #eee;
+  position: relative;
 
   :global main {
     display: flex;
@@ -32,6 +32,7 @@
         .dropdownBtn {
           border: none;
           outline: none;
+          background-color: transparent;
           color: #b311ff;
           font-size: 18px;
           cursor: pointer;
@@ -84,6 +85,14 @@
         padding: 9px 28px;
         margin-left: 0.75vw;
       }
+    }
+
+    .decoration-layer-1 {
+      color: white;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
     }
   }
 }

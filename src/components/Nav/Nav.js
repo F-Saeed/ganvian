@@ -1,6 +1,7 @@
 import styles from './Nav.module.scss';
 import { ReactComponent as Logo } from '../../assets/images/logo.svg';
 import { ReactComponent as ArrowDown } from '../../assets/images/arrow_down.svg';
+import { ReactComponent as DecorationLayer1 } from '../../assets/images/decoration_layer_1.svg';
 
 const Nav = () => {
   return (
@@ -26,6 +27,7 @@ const Nav = () => {
           </div>
           <button className='contactUs'>Contact Us</button>
         </div>
+        <DecorationLayer1 />
       </main>
     </nav>
   );
