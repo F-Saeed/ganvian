@@ -35,8 +35,60 @@ section {
   margin-top: 60px;
 }
 
+.section4 {
+  margin-top: 80px;
+
+  svg {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  div {
+    margin-top: 105px;
+    max-width: 525px;
+  }
+
+  img {
+    margin-top: 105px;
+    max-width: 375px;
+  }
+}
+
+.section5 {
+  margin-top: 120px;
+
+  svg {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+
+  img {
+    margin-top: 65px;
+    max-width: 320px;
+  }
+
+  div {
+    margin-top: 65px;
+    max-width: 550px;
+  }
+}
+
+.section6 {
+  margin-top: 150px;
+
+  svg {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+}
+
 .section1,
-.section2 {
+.section2,
+.section4,
+.section5 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
