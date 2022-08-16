@@ -1,0 +1,57 @@
+.quoteForm {
+  background: linear-gradient(288.7deg, #9896f0 -0.71%, #fdadfa 100%);
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+
+  :global .text {
+    max-width: 400px;
+
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    p {
+      color: #fff;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 178%;
+      max-width: 355px;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      border-radius: 15px;
+      color: #b311ff;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 18px 75px;
+      margin-top: 60px;
+    }
+  }
+
+  :global .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 450px;
+
+    input,
+    textarea {
+      border: none;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: 500;
+      outline: none;
+      padding: 16px 19px;
+      margin: 10.5px 0;
+    }
+  }
+}

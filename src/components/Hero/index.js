@@ -12,6 +12,12 @@ import { ReactComponent as DecorationLayer2 } from '../../assets/images/decorati
 import frame3 from '../../assets/images/frame_3.png';
 import { ReactComponent as DecorationLayer3 } from '../../assets/images/decoration_layer_3.svg';
 import frame4 from '../../assets/images/frame_4.png';
+import arrowRight from '../../assets/images/arrow_right.png';
+import arrowLeft from '../../assets/images/arrow_left.png';
+import person1 from '../../assets/images/person_1.png';
+import person2 from '../../assets/images/person_2.png';
+import person3 from '../../assets/images/person_3.png';
+import person4 from '../../assets/images/person_4.png';
 
 // Styles
 import styles from './Hero.module.scss';
@@ -19,6 +25,8 @@ import ClientCard from '../ClientCard';
 
 // External
 import { Carousel } from '@trendyol-js/react-carousel';
+import CarouselArrow from '../CarouselArrow';
+import QuoteForm from '../QuoteForm';
 
 const Hero = () => {
   return (
@@ -98,8 +106,7 @@ const Hero = () => {
         <img src={frame4} alt='People looking at tablet' />
         <div>
           <h1>
-            We Are Transforming the
-            <span>Digital Landscape</span>
+            We Are Transforming the <span>Digital Landscape</span>
           </h1>
           <p>
             We take care of your business needs by bringing novel digital
@@ -114,11 +121,47 @@ const Hero = () => {
       </section>
       <section className={styles.section6}>
         <DecorationLayer2 />
-        <Carousel show={3.5} slide={3} swiping={true}>
-          <ClientCard />
-          <ClientCard />
-          <ClientCard />
+        <h1>
+          Client <span>Commentaries</span>
+        </h1>
+        <Carousel
+          show={3}
+          slide={1}
+          swiping={true}
+          leftArrow={<CarouselArrow arrow={arrowLeft} arrowName='arrowLeft' />}
+          rightArrow={
+            <CarouselArrow arrow={arrowRight} arrowName='arrowRight' />
+          }
+          responsive
+        >
+          <ClientCard
+            image={person1}
+            title='Wade Warren'
+            text='There are many variations of passages of Lorem Ipsum available, but the majority have suffered'
+          />
+          <ClientCard
+            image={person2}
+            title='Esther Howard'
+            text='There are many variations of passages of Lorem Ipsum available, but the majority have suffered'
+          />
+          <ClientCard
+            image={person3}
+            title='Guy Hawkins'
+            text='There are many variations of passages of Lorem Ipsum available, but the majority have suffered'
+          />
+          <ClientCard
+            image={person4}
+            title='Kristin Watson'
+            text='There are many variations of passages of Lorem Ipsum available, but the majority have suffered'
+          />
         </Carousel>
+      </section>
+
+      <section className={styles.section7}>
+        <h1>
+          Project <span>Budget</span>
+        </h1>
+        <QuoteForm />
       </section>
     </>
   );
