@@ -1,13 +1,14 @@
 import styles from './FooterList.module.scss';
+import items from './itemsObject';
 
-const FooterList = ({ heading, list }) => {
+const FooterList = ({ heading, items }) => {
   return (
     <div className={styles.footerList}>
-      <h3>About Us</h3>
+      <h3>{heading}</h3>
       <ul>
-        <li>Something something</li>
-        <li>Something something</li>
-        <li>Something something</li>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
     </div>
   );
