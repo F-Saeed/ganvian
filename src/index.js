@@ -10,11 +10,13 @@ import './assets/fonts/poppins/poppins.css';
 // Components
 import Nav from './components/Nav/Nav';
 import App from './components/App';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Nav />
     <App />
+    <Footer />
   </React.StrictMode>
 );

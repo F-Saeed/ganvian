@@ -1,5 +1,6 @@
 section {
   margin: 0 auto;
+  width: 90%;
   max-width: 1100px;
 }
 
@@ -111,6 +112,68 @@ section {
   h1 {
     margin-top: 200px;
     margin-bottom: 100px;
+  }
+}
+
+.section8 {
+  background-color: #ffe5fe;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 100%;
+
+  :global .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1320px;
+
+    .text {
+      max-width: 350px;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 15px 0;
+      }
+
+      p {
+        color: #99b8af;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    .form {
+      display: flex;
+      height: 70px;
+      width: 80%;
+
+      input {
+        border: none;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        outline: none;
+        padding: 21px;
+        width: 100%;
+      }
+
+      button {
+        border: 0;
+        outline: 0;
+        background-color: #020706;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 20px;
+        padding: 21px 60px;
+      }
+    }
   }
 }
 

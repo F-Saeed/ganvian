@@ -1,5 +1,5 @@
 import styles from './Nav.module.scss';
-import { ReactComponent as Logo } from '../../assets/images/logo.svg';
+import logo from '../../assets/images/company_logo.png';
 import { ReactComponent as ArrowDown } from '../../assets/images/arrow_down.svg';
 import { ReactComponent as DecorationLayer1 } from '../../assets/images/decoration_layer_1.svg';
 
@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <main>
-        <Logo />
+        <img src={logo} alt='Company Logo' />
         <div className='navOptions'>
           <div className='active'>Home</div>
           <div>Services</div>

@@ -18,6 +18,7 @@ import person1 from '../../assets/images/person_1.png';
 import person2 from '../../assets/images/person_2.png';
 import person3 from '../../assets/images/person_3.png';
 import person4 from '../../assets/images/person_4.png';
+import logo from '../../assets/images/logo.png';
 
 // Styles
 import styles from './Hero.module.scss';
@@ -162,6 +163,24 @@ const Hero = () => {
           Project <span>Budget</span>
         </h1>
         <QuoteForm />
+      </section>
+
+      <h1>
+        Featured <span>Project</span>
+      </h1>
+
+      <section className={styles.section8}>
+        <div className='form-container'>
+          <div className='text'>
+            <img src={logo} alt='Company Logo' />
+            <h3>Technology quickly and effectively</h3>
+            <p>Get a quote for your project with our company</p>
+          </div>
+          <div className='form'>
+            <input type='email' name='email' placeholder='Email' />
+            <button type='button'>Send</button>
+          </div>
+        </div>
       </section>
     </>
   );

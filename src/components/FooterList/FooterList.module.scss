@@ -1,0 +1,23 @@
+.footerList {
+  color: #fff;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-top: 42px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      font-weight: 500;
+      margin: 30px 0;
+    }
+  }
+}
