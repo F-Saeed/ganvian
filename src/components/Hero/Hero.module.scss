@@ -89,23 +89,6 @@ section {
     padding-top: 100px;
     padding-bottom: 60px;
   }
-
-  :global [data-testid='carousel'] {
-    div {
-      .arrowLeft {
-        margin-right: 30px;
-      }
-
-      .arrowRight {
-        margin-left: 30px;
-      }
-
-      .arrowLeft,
-      .arrowRight {
-        transform: translateY(150%);
-      }
-    }
-  }
 }
 
 .section7 {

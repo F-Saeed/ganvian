@@ -1,5 +1,6 @@
 // Components
 import ServiceCard from '../ServiceCard';
+import Carousel from '../Carousel';
 
 // Images
 import { ReactComponent as Frame1 } from '../../assets/images/frame_1.svg';
@@ -12,8 +13,6 @@ import { ReactComponent as DecorationLayer2 } from '../../assets/images/decorati
 import frame3 from '../../assets/images/frame_3.png';
 import { ReactComponent as DecorationLayer3 } from '../../assets/images/decoration_layer_3.svg';
 import frame4 from '../../assets/images/frame_4.png';
-import arrowRight from '../../assets/images/arrow_right.png';
-import arrowLeft from '../../assets/images/arrow_left.png';
 import person1 from '../../assets/images/person_1.png';
 import person2 from '../../assets/images/person_2.png';
 import person3 from '../../assets/images/person_3.png';
@@ -25,8 +24,6 @@ import styles from './Hero.module.scss';
 import ClientCard from '../ClientCard';
 
 // External
-import { Carousel } from '@trendyol-js/react-carousel';
-import CarouselArrow from '../CarouselArrow';
 import QuoteForm from '../QuoteForm';
 
 const Hero = () => {
@@ -125,16 +122,7 @@ const Hero = () => {
         <h1>
           Client <span>Commentaries</span>
         </h1>
-        <Carousel
-          show={3}
-          slide={1}
-          swiping={true}
-          leftArrow={<CarouselArrow arrow={arrowLeft} arrowName='arrowLeft' />}
-          rightArrow={
-            <CarouselArrow arrow={arrowRight} arrowName='arrowRight' />
-          }
-          responsive
-        >
+        <Carousel>
           <ClientCard
             image={person1}
             title='Wade Warren'
