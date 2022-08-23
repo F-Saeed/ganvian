@@ -8,7 +8,7 @@ import './index.css';
 import './assets/fonts/poppins/poppins.css';
 
 // Components
-import Nav from './components/Nav/Nav';
+import Nav from './components/Nav';
 import App from './components/App';
 import Footer from './components/Footer';
 
