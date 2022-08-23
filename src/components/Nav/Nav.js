@@ -1,6 +1,5 @@
 import styles from './Nav.module.scss';
 import logo from '../../assets/images/company_logo.png';
-import { ReactComponent as ArrowDown } from '../../assets/images/arrow_down.svg';
 import { ReactComponent as DecorationLayer1 } from '../../assets/images/decoration_layer_1.svg';
 import { useState } from 'react';
 
@@ -16,9 +15,15 @@ const Nav = () => {
       <main>
         <img src={logo} alt='Company Logo' />
         <div className='hamburger-lines' onClick={toggleClass}>
-          <span className='line line1'></span>
-          <span className='line line2'></span>
-          <span className='line line3'></span>
+          <span
+            className={['line', active ? styles.line1 : null].join(' ')}
+          ></span>
+          <span
+            className={['line', active ? styles.line2 : null].join(' ')}
+          ></span>
+          <span
+            className={['line', active ? styles.line3 : null].join(' ')}
+          ></span>
         </div>
         <div className={['navMenu', active ? 'menuOpen' : null].join(' ')}>
           <ul className='navOptions'>

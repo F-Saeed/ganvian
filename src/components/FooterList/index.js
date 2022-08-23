@@ -1,5 +1,4 @@
 import styles from './FooterList.module.scss';
-import items from './itemsObject';
 
 const FooterList = ({ heading, items }) => {
   return (

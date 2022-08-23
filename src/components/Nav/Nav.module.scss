@@ -42,7 +42,6 @@
 
         li {
           cursor: pointer;
-          margin: auto 2vw;
         }
 
         .active {
@@ -102,6 +101,10 @@
       // }
 
       .navRight {
+        display: grid;
+        place-items: center;
+        width: 100%;
+
         .contactUs {
           border: none;
           cursor: pointer;
@@ -126,6 +129,24 @@
   }
 }
 
+// Hamburger
+.line1 {
+  transform: rotate(45deg);
+  transition: transform 0.4s ease-in-out;
+  transform-origin: 0% 0%;
+}
+
+.line2 {
+  transform: scaleY(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.line3 {
+  transform: rotate(-45deg);
+  transition: transform 0.4s ease-in-out;
+  transform-origin: 0% 100%;
+}
+
 @media screen and (max-width: 2000px) {
   .nav {
     :global main {
@@ -148,6 +169,7 @@
         top: 80px;
 
         .navOptions {
+          background: #ecf0f1;
           // box-shadow: 0px 5px 10px 0px #aaa;
           flex-direction: column;
           align-items: center;
@@ -155,13 +177,24 @@
           width: 200px;
 
           li {
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+              background: #3498db;
+              color: #fff;
+            }
           }
         }
 
         .navRight {
-          margin: 0 auto;
+          background: #ecf0f1;
+
+          &:hover {
+            background: #3498db;
+          }
 
           .contactUs {
             margin: 20px auto;
@@ -174,5 +207,11 @@
         flex-direction: column;
       }
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  svg {
+    display: none;
   }
 }

@@ -29,6 +29,7 @@ const QuoteForm = () => {
           rows='8'
           placeholder='Project Description'
         ></textarea>
+        <button>Submit</button>
       </div>
     </div>
   );

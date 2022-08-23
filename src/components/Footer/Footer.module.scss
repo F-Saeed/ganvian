@@ -36,3 +36,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    :global .footerContent {
+      flex-wrap: wrap;
+    }
+
+    :global .copyright {
+      flex-direction: column;
+
+      .copyright-text {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

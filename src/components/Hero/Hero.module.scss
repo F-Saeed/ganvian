@@ -33,7 +33,7 @@ section {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .section4 {
@@ -188,26 +188,28 @@ section {
       line-height: 36px;
     }
 
-    button {
-      border: none;
-
-      border-radius: 15px;
-      font-weight: 700;
-      font-size: 20px;
-      padding: 18px 25px;
+    .buttons {
       margin-top: 60px;
-    }
 
-    button.primary {
-      background-color: #b311ff;
-      color: #fff;
-      margin-right: 30px;
-    }
+      button {
+        border: none;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 18px 25px;
+      }
 
-    button.secondary {
-      background-color: transparent;
-      color: #b311ff;
-      border: 1.5px solid #b311ff;
+      button.primary {
+        background-color: #b311ff;
+        color: #fff;
+        margin-right: 30px;
+      }
+
+      button.secondary {
+        background-color: transparent;
+        color: #b311ff;
+        border: 1.5px solid #b311ff;
+      }
     }
   }
 }
@@ -220,5 +222,114 @@ h1 {
 
   span {
     color: #b311ff;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .section1,
+  .section2,
+  .section4,
+  .section5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section5 {
+    flex-direction: column-reverse;
+  }
+
+  .section1 {
+    svg {
+      margin-top: 50px;
+    }
+  }
+
+  .section2 {
+    img {
+      margin-bottom: 50px;
+    }
+  }
+
+  .section8 {
+    :global .form-container {
+      flex-direction: column;
+
+      .form {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section4,
+  .section5,
+  .section6 {
+    svg {
+      display: none;
+    }
+  }
+
+  .section1,
+  .section2,
+  .section4,
+  .section5 {
+    text-align: center;
+
+    div {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+
+  .section8 {
+    :global .form-container {
+      text-align: center;
+
+      .form {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        button {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    width: auto;
+  }
+
+  .section2,
+  .section4,
+  .section5 {
+    img {
+      height: auto;
+      width: 90%;
+    }
+  }
+
+  .section1,
+  .section2,
+  .section4,
+  .section5 {
+    :global div {
+      .buttons {
+        margin-top: 30px;
+
+        button.primary {
+          margin: 0;
+        }
+
+        button {
+          margin: 20px 0;
+        }
+      }
+    }
   }
 }

@@ -37,12 +37,14 @@ const Hero = () => {
           <p>
             We always seek the best way to help our customers with good agility.
           </p>
-          <button type='button' className='primary'>
-            Free Consultation
-          </button>
-          <button type='button' className='secondary'>
-            Read More
-          </button>
+          <div className='buttons'>
+            <button type='button' className='primary'>
+              Free Consultation
+            </button>
+            <button type='button' className='secondary'>
+              Read More
+            </button>
+          </div>
         </div>
         <Frame1 />
       </section>
@@ -61,12 +63,14 @@ const Hero = () => {
           <p>
             We always seek the best way to help our customers with good agility.
           </p>
-          <button type='button' className='primary'>
-            Our Company
-          </button>
-          <button type='button' className='secondary'>
-            Learn More
-          </button>
+          <div className='buttons'>
+            <button type='button' className='primary'>
+              Our Company
+            </button>
+            <button type='button' className='secondary'>
+              Learn More
+            </button>
+          </div>
         </div>
       </section>
 
@@ -92,9 +96,11 @@ const Hero = () => {
             development solutions that expand your reach, improve your customer
             engagement, and take your business to the next level.
           </p>
-          <button type='button' className='primary'>
-            Our Services
-          </button>
+          <div className='buttons'>
+            <button type='button' className='primary'>
+              Our Services
+            </button>
+          </div>
         </div>
         <img src={frame3} alt='Boy working on computer' />
       </section>
@@ -112,9 +118,11 @@ const Hero = () => {
             development. Our team offers end-to-end full stack development
             services blended with
           </p>
-          <button type='button' className='primary'>
-            Free Consultation
-          </button>
+          <div className='buttons'>
+            <button type='button' className='primary'>
+              Free Consultation
+            </button>
+          </div>
         </div>
       </section>
       <section className={styles.section6}>
@@ -154,7 +162,7 @@ const Hero = () => {
       </section>
 
       <h1>
-        Featured <span>Project</span>
+        Featured <span>Projects</span>
       </h1>
 
       <section className={styles.section8}>

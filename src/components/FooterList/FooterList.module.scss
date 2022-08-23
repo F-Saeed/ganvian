@@ -21,3 +21,10 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .footerList {
+    margin: 0 auto;
+    width: 225px;
+  }
+}
