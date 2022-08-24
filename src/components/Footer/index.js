@@ -18,7 +18,11 @@ const Footer = () => {
         <FooterList heading='About Us' items={items['About Us']} />
         <FooterList heading='Services' items={items.Services} />
         <FooterList heading='Products' items={items.Products} />
-        <FooterList heading='Contact Us' items={items['Contact Us']} />
+        <FooterList
+          heading='Contact Us'
+          items={items['Contact Us']}
+          name='contact'
+        />
       </div>
       <div className='break'></div>
       <div className='copyright'>

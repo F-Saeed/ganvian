@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ReactComponent as DownArrow } from '../../assets/images/arrow_down.svg';
 import styles from './FooterList.module.scss';
 
-const FooterList = ({ heading, items }) => {
+const FooterList = ({ heading, items, name }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -16,7 +16,9 @@ const FooterList = ({ heading, items }) => {
       </h3>
       <ul className={expanded ? styles.expanded : styles.notExpanded}>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} className={name}>
+            {item}
+          </li>
         ))}
       </ul>
     </div>
