@@ -150,9 +150,10 @@ section {
         outline: 0;
         background-color: #020706;
         border-radius: 12px;
+        color: #fff;
+        cursor: pointer;
         font-size: 20px;
         font-weight: 700;
-        color: #fff;
         margin-left: 20px;
         padding: 21px 60px;
       }
@@ -194,6 +195,7 @@ section {
       button {
         border: none;
         border-radius: 15px;
+        cursor: pointer;
         font-weight: 700;
         font-size: 20px;
         padding: 18px 25px;
@@ -209,6 +211,7 @@ section {
         background-color: transparent;
         color: #b311ff;
         border: 1.5px solid #b311ff;
+        padding: 16.5px 23.5px;
       }
     }
   }

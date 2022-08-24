@@ -1,11 +1,18 @@
 .footerLink {
   border-radius: 50%;
   background-color: #eee;
+  cursor: pointer;
   padding: 19px 20px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (max-width: 800px) {
   .footerLink {
+    transform: none;
+
     svg {
       display: block;
     }

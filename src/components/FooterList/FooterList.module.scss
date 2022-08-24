@@ -2,7 +2,6 @@
   color: #fff;
 
   h3 {
-    cursor: pointer;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -38,6 +37,7 @@
 @media screen and (max-width: 500px) {
   .footerList {
     h3 {
+      cursor: pointer;
       text-align: center;
 
       svg {

@@ -1,5 +1,6 @@
 .quoteForm {
   button {
+    cursor: pointer;
     outline: none;
     border: none;
     border-radius: 15px;
@@ -8,6 +9,11 @@
     font-weight: 700;
     padding: 18px 75px;
     margin-top: 60px;
+
+    &:hover {
+      background-color: #b311ff;
+      color: #fff;
+    }
   }
 
   background: linear-gradient(288.7deg, #9896f0 -0.71%, #fdadfa 100%);
