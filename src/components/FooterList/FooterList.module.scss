@@ -7,6 +7,10 @@
     font-weight: 600;
     margin-bottom: 12px;
     padding-top: 42px;
+
+    svg {
+      display: none;
+    }
   }
 
   ul {
@@ -35,7 +39,15 @@
   .footerList {
     h3 {
       text-align: center;
+
+      svg {
+        display: inline;
+      }
     }
+  }
+
+  .upArrow {
+    transform: rotate(180deg) translateY(-3.75px);
   }
 
   .notExpanded {
@@ -44,5 +56,9 @@
 
   .expanded {
     display: block;
+
+    li {
+      text-align: center;
+    }
   }
 }

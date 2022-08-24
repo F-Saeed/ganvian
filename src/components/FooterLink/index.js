@@ -1,5 +1,6 @@
 import styles from './FooterLink.module.scss';
 
+
 const FooterLink = ({ Image }) => {
   return (
     <div className={styles.footerLink}>

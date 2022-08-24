@@ -57,7 +57,7 @@ const Hero = () => {
         <img src={frame2} alt='Boy and Girl looking at tablet' />
         <div>
           <h1>
-            A company specializing in <span>application</span> and
+            A company specializing in <span>application</span> and{' '}
             <span>website</span> development
           </h1>
           <p>
