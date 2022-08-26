@@ -72,7 +72,7 @@
     align-items: center;
 
     :global .text {
-      max-width: 600px;
+      max-width: 90%;
 
       h1 {
         text-align: center;
@@ -81,6 +81,7 @@
       p {
         text-align: center;
         margin: 0 auto;
+        max-width: 90%;
       }
 
       button {
@@ -89,6 +90,8 @@
     }
 
     :global .form {
+      max-width: 85%;
+
       button {
         display: block;
       }
@@ -106,5 +109,13 @@
   .quoteForm {
     border-radius: 0;
     padding: 40px 20px;
+
+    :global .text {
+      max-width: 90%;
+    }
+
+    :global .form {
+      max-width: 90%;
+    }
   }
 }
